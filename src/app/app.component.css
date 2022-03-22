@@ -1,0 +1,79 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 2rem;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.box {
+  display: flex;
+  background-color: #8ca0ff;
+  border: 4px solid #8ca0ff;
+  border-radius: 10px;
+  width: 0.5rem;
+  height: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-family: Tahoma;
+  font-weight: 700;
+  padding: 0.8em;
+}
+
+.active {
+  border: 4px solid black;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-left: 2rem;
+  background-color: #8ca0ff;
+  border: 4px solid #8ca0ff;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 5rem;
+  height: 3rem;
+}
+
+.form-container {
+  margin-top: 2rem;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.btn-large {
+  background-color: #8ca0ff;
+  border: 4px solid #8ca0ff;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 9rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.form-container .btn-container {
+  justify-content: left;
+  align-items: left;
+}
+
+.input-large {
+  width: 10rem;
+  height: 1.5rem;
+}
+
+.output {
+  margin-top: 1rem;
+}

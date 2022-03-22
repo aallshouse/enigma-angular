@@ -1,0 +1,46 @@
+<div class="container">
+  <div
+    *ngFor="let char of rotor1CharsToShow; index as i"
+    class="box"
+    [ngClass]="{ active: i === 1 }"
+  >
+    {{ char.replace('.', '') }}
+  </div>
+</div>
+<div class="container">
+  <div
+    *ngFor="let char of alphabetCharsToShow; index as i"
+    class="box"
+    [ngClass]="{ active: i === 1 }"
+  >
+    {{ char.replace('.', '') }}
+  </div>
+</div>
+<div class="btn-container">
+  <button class="btn" (click)="prev()">Prev</button>
+  <button class="btn" (click)="next()">Next</button>
+</div>
+<div class="form-container">
+  <input
+    class="input-large"
+    type="text"
+    id="plainText"
+    placeholder="enter text to encrypt"
+    name="plainText"
+    [(ngModel)]="plainText"
+  />
+  <div class="btn-container">
+    <button class="btn-large" (click)="encryptInput()">Encrypt text</button>
+    <button class="btn-large" (click)="stepAlphabet()">Step Alphabet</button>
+    <button class="btn-large" (click)="resetStepCount()">Reset</button>
+  </div>
+  <div class="output">
+    <div class="rotor3Output"></div>
+    <div class="rotor2Output"></div>
+    <div class="rotor1Output"></div>
+    <div class="reflectorOutput"></div>
+    <div class="rotor1Output2"></div>
+    <div class="rotor2Output2"></div>
+    <div class="rotor3Output2"></div>
+  </div>
+</div>
